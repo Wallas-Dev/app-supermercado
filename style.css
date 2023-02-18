@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 103, 191);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.lista-cadastro {
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+
+}
+
+.lista-cadastro input[type=text] {
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(137, 170, 223);
+    border: 0;
+}
+
+.lista-cadastro input[type=text]::placeholder {
+    color: white;
+}
+
+.lista-cadastro input[type=number] {
+    flex: 0.25;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(137, 170, 223);
+    border: 0;
+}
+
+.lista-cadastro input[type=number]::placeholder {
+    color: white;
+}
+
+.lista-cadastro input[type=submit] {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgb(28, 97, 208);
+    border: 0;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.lista-cadastro input[type=submit]:hover {
+    border-radius: 10px;
+    background-color: rgb(110, 154, 225);
+    color: white;
+    transition: 0.3s;
+}
+
+.lista-cadastro input {
+    margin: 0 4px;
+}
+
+.lista-produto-single {
+    padding: 15px 0;
+    border-top: 1px solid #4e4e4e;
+    border-bottom: 1px solid #454545;
+    display: flex;
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista-produto-single h3 {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h3.price-produto {
+    text-align: right;
+    font-size: 17px;
+}
+
+h3.price-produto>span {
+    background-color: rgb(48, 103, 191);
+    padding: 8px 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+.soma-produto {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px 13px;
+    width: 100%;
+
+}
+
+.w50 {
+    width: 100%;
+}
+
+.soma-produto h1>span {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(4, 139, 56);
+    padding: 5px 8px;
+    color: white;
+    border-radius: 20px;
+}
+
+.soma-produto button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.soma-produto button:hover {
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(231, 96, 96);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(231, 96, 96);
+    cursor: pointer;
+
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+
+}
+
+h2.preco {
+    flex: 1;
+    text-align: right;
+}
+
+@media screen and (max-width: 550px) {
+
+
+    .soma-produto {
+        display: block;
+        text-align: center;
+    }
+
+    .w50 {
+        width: 100%;
+    }
+
+    .soma-produto h1>span {
+        font-size: 40px;
+    }
+
+    .soma-produto button {
+        margin-top: 2%;
+    }
+}
